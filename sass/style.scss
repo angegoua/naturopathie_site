@@ -1,0 +1,27 @@
+// COLORS
+
+$orange-color : #DAA520;
+$pink-color: #FFCCCC;
+$black : #000;
+$white : #fff;
+
+// FONTS
+$current-text : 'Pompiere';
+$title : 'Open Sans Condensed';
+$subtitle : 'Arima Madurai';
+
+body{
+    padding: 0;
+    margin : 0;
+}
+
+p{
+    font-family: $current-text;
+    font-size : 16px;
+    color: $orange-color;
+}
+
+h5{
+    font-family: $title
+}
+
