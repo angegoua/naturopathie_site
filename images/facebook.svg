@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14.5" height="29.173" viewBox="0 0 14.5 29.173">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="14.5" height="29.173" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="facebook-logo" transform="translate(0)" clip-path="url(#clip-path)">
+    <path id="Tracé_1" data-name="Tracé 1" d="M36.031.006,32.553,0c-3.907,0-6.432,2.818-6.432,7.18v3.31h-3.5a.572.572,0,0,0-.547.6v4.8a.572.572,0,0,0,.547.595h3.5v12.1a.572.572,0,0,0,.547.595H31.23a.572.572,0,0,0,.547-.595v-12.1h4.089a.572.572,0,0,0,.547-.595l0-4.8a.623.623,0,0,0-.16-.421.526.526,0,0,0-.387-.175h-4.09V7.684c0-1.349.3-2.033,1.911-2.033H36.03a.572.572,0,0,0,.547-.595V.6A.573.573,0,0,0,36.031.006Z" transform="translate(-22.077)" fill="#daa520"/>
+  </g>
+</svg>

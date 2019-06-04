@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23.571" height="23.571" viewBox="0 0 23.571 23.571">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="23.571" height="23.571" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="instagram_1_" data-name="instagram (1)" clip-path="url(#clip-path)">
+    <g id="Groupe_2" data-name="Groupe 2">
+      <g id="Groupe_1" data-name="Groupe 1">
+        <path id="Tracé_2" data-name="Tracé 2" d="M16.2,0H7.366A7.367,7.367,0,0,0,0,7.366V16.2a7.367,7.367,0,0,0,7.366,7.366H16.2A7.367,7.367,0,0,0,23.571,16.2V7.366A7.367,7.367,0,0,0,16.2,0Zm5.156,16.2A5.162,5.162,0,0,1,16.2,21.361H7.366A5.162,5.162,0,0,1,2.21,16.2V7.366A5.162,5.162,0,0,1,7.366,2.21H16.2a5.162,5.162,0,0,1,5.156,5.156Z" fill="#daa520"/>
+      </g>
+    </g>
+    <g id="Groupe_4" data-name="Groupe 4" transform="translate(5.893 5.893)">
+      <g id="Groupe_3" data-name="Groupe 3">
+        <path id="Tracé_3" data-name="Tracé 3" d="M133.893,128a5.893,5.893,0,1,0,5.893,5.893A5.893,5.893,0,0,0,133.893,128Zm0,9.576a3.683,3.683,0,1,1,3.683-3.683A3.688,3.688,0,0,1,133.893,137.576Z" transform="translate(-128 -128)" fill="#daa520"/>
+      </g>
+    </g>
+    <g id="Groupe_6" data-name="Groupe 6" transform="translate(17.335 4.666)">
+      <g id="Groupe_5" data-name="Groupe 5" transform="translate(0 0)">
+        <circle id="Ellipse_2" data-name="Ellipse 2" cx="0.785" cy="0.785" r="0.785" fill="#daa520"/>
+      </g>
+    </g>
+  </g>
+</svg>
