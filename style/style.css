@@ -1,16 +1,15 @@
 body {
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
 p {
   font-family: "Pompiere";
-  font-size: 16px;
-  color: #DAA520;
-}
+  font-size: 36px;
+  color: #000; }
 
-h5 {
-  font-family: "Open Sans Condensed";
-}
+.head-backgroundImage--index {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/bg-accueil.png"); }
 
 /*# sourceMappingURL=style.css.map */
