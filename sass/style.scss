@@ -26,11 +26,10 @@ HEADER
 */
 
 .head-backgroundImage {
-    height: 1000px;
+    height: 969px;
     width: 100%;
     position: relative;
-    display: flex;
-    justify-content: center;
+    background-size: 100%;    
 
     &--index{
         background-image: url('../images/bg-accueil.png');
@@ -39,6 +38,7 @@ HEADER
 
 //navaigation menu nav
 .head__navigation-menu {
+
     background-color: rgb(255, 255, 255); 
     background-color: rgba(255, 255, 255, 0.3);
     width: 100%;
@@ -69,7 +69,7 @@ HEADER
 
         //navigation menu listItem a 
         &Item a {
-            font-family: $current-text;
+            font-family: $title;
             font-weight: lighter;
             font-size: 24px;
             color: $white;
@@ -78,7 +78,77 @@ HEADER
     }
 }
 
+//text in the 
+.head__titleDiv {
+    width: 100%;
+    height: 72%;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: $subtitle, Courier, monospace;
+    color: white;
+    
+
+    &__title {
+        font-size: 100px;
+        margin-bottom: 0px;
+        margin-top: 100px;
+        font-weight: normal;
+    }
+
+    &__subTitle1 {
+        font-size: 24px;
+        font-weight: lighter;
+        margin-top: -18px;
+    }
+
+    &__subTitle2 {
+        font-size: 24px;
+        color: $pink-color;
+        margin-top: -13px;
+        font-weight: normal;
+    }
+}
+
 //Bouton scroll
 .head__scroll-button {
-    
+    position: absolute;
+    bottom: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+//Header socialNetwork Icon part
+.head__socialNetDiv {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    right: 10%;
+
+    &__icon {
+
+        width: 32px;
+        height: 32px; 
+
+        &--facebook {
+            background-image: url('../images/facebook.png');
+        }
+
+        &--instagram {
+            background-image: url('../images/instagram.svg');
+        }
+
+        &--youtube {
+            background-image: url('../images/youtube.svg');
+        }
+    }
+
+    &:before {
+        background: $orange-color;
+        height: 83px;
+        width: 2px;
+    }
 }
