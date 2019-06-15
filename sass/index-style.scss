@@ -1,24 +1,4 @@
 //Linking the style.scss
 @import 'style';
 
-.general-presentation {
-    height: 980px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    &__content {
-        width: 54.5%;
-    }
-}
-
-.services-presentation {
-    height: 980px;
-    width: 100%;
-    background-size: 100%;  
-    background-image: url('../images/bg-univers.png');
-    
-
-}
 

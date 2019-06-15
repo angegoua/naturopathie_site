@@ -245,6 +245,7 @@ MAIN
   .contact__form {
     margin: 30px; }
     .contact__form__submit {
+      margin-bottom: 30px;
       padding: 10px 60px;
       border: none;
       background: #DAA520;
@@ -301,19 +302,15 @@ MAIN
     .contact__info__localisation::before {
       content: url("../images/localisation.png"); }
 
-.general-presentation {
-  height: 980px;
-  width: 100%;
+footer {
+  height: 100px;
   display: flex;
-  justify-content: center;
-  align-items: center; }
-  .general-presentation__content {
-    width: 54.5%; }
-
-.services-presentation {
-  height: 980px;
-  width: 100%;
-  background-size: 100%;
-  background-image: url("../images/bg-univers.png"); }
+  align-items: center;
+  justify-content: center; }
+  footer p {
+    font-family: "Arima Madurai";
+    font-size: 16px;
+    text-align: center;
+    opacity: 0.5; }
 
 /*# sourceMappingURL=index-style.css.map */

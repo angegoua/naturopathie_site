@@ -362,7 +362,7 @@ MAIN
     &__form{
         margin: 30px;
 
-        &__submit{
+        &__submit{margin-bottom: 30px;
             padding: 10px 60px;
             border: none;
             background: $orange-color;
@@ -456,4 +456,19 @@ MAIN
         }
     }
 
+}
+
+
+footer {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p{
+        font-family: $subtitle;
+    font-size: 16px;
+    text-align: center;
+    opacity: 0.5;
+    }
+    
 }
