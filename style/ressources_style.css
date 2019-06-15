@@ -17,7 +17,7 @@ HEADER
   position: relative;
   background-size: 100%; }
   .head-backgroundImage--index {
-    background-image: url("../images/bg-accueil.png"); }
+    background-image: url("../images/bg-ressources.png");}
 
 .head__navigation-menu {
   background-color: white;
@@ -115,24 +115,52 @@ HEADER
 
 
 .youtube__videos {
-  height: 980px;
-  width: 100%;
-  display: flex;
+  padding-bottom: 100px;
+  display : flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
-  align-items: center; }
+  align-content: center;
+  height: 980px;
+  width: 100%; }
   .youtube__videos__title{
-    width: 54.5%;
-    position : absolute;
-    top : 980px;
     text-align: center;
-    font-family: "Pompiere";
+    width: 100%;
+    font-family: "Arima Madurai", Courier, monospace;
     font-size: 36px;
-    color: #000;}
+    color: #000; }
   .youtube__videos__content {
-    width: 54.5%; }
+    width: 47%; }
+  .youtube__videos__explain {
+    width: 80%;
+    margin-top: 20px;
+    font-size: 18px;
+  }
 
-.services-presentation {
+.articles__presentation {
+  display : flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
   height: 980px;
   width: 100%;
   background-size: 100%;
-  background-image: url("../images/bg-univers.png"); }
+  background-image: url("../images/bg-articles.png"); }
+  .articles__title{
+    text-align: center;
+    width: 100%;
+    font-family: "Arima Madurai", Courier, monospace;
+    font-size: 36px;
+    color: #000; }
+  .articles__content {
+    width : 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .articles__content__image {
+      height: 350px;
+      width: 450px;
+      overflow: hidden;
+    }
