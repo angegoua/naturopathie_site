@@ -11,25 +11,26 @@ p {
 HEADER
 */
 .head-backgroundImage {
-  height: 969px;
+  height: 100vh;
   width: 100%;
   position: relative;
   background-size: 100%; }
   .head-backgroundImage--index {
     background-image: url("../images/bg-accueil.png"); }
 
-.head__navigation-menu {
-  background-color: white;
-  background-color: rgba(255, 255, 255, 0.3);
-  width: 100%;
-  height: 110px;
+.head__container {
   display: flex;
   justify-content: space-around;
   align-items: center; }
+
+.head__navigation-menu {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  height: 70px; }
   .head__navigation-menu__logo {
     background: #FFCCCC;
-    width: 72px;
-    height: 72px;
+    width: 50px;
+    height: 50px;
     border-radius: 49.5%; }
   .head__navigation-menu__list {
     display: flex;
@@ -40,7 +41,7 @@ HEADER
       margin-left: 30px;
       margin-right: 30px; }
     .head__navigation-menu__listItem a {
-      font-family: "Open Sans Condensed";
+      font-family: "Pompiere";
       font-weight: lighter;
       font-size: 24px;
       color: #fff;
@@ -61,22 +62,35 @@ HEADER
     margin-top: 100px;
     font-weight: normal; }
   .head__titleDiv__subTitle1 {
-    font-size: 24px;
-    font-weight: lighter;
-    margin-top: -18px; }
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: -18px;
+    opacity: 0.6; }
   .head__titleDiv__subTitle2 {
-    font-size: 24px;
+    font-size: 16px;
     color: #FFCCCC;
     margin-top: -13px;
-    font-weight: normal; }
+    font-weight: 100;
+    opacity: 0.6; }
 
 .head__scroll-button {
   position: absolute;
-  bottom: 75px;
+  bottom: 50px;
   width: 100%;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  animation: scroll-button ease-in; }
+  .head__scroll-button img {
+    width: 23.5px;
+    height: 13px; }
 
+@keyframes scroll-button {
+  from {
+    position: absolute;
+    transform: rotate(90deg); }
+  to {
+    position: absolute;
+    bottom: 50px; } }
 .head__socialNetDiv {
   position: fixed;
   display: flex;
@@ -112,19 +126,191 @@ HEADER
     height: 83px;
     width: 2px; }
 
+/*
+MAIN
+*/
+.separation-dash {
+  height: 2px;
+  width: 60px;
+  background: lightgrey;
+  border-radius: 2px;
+  margin: 50px auto; }
+
 .general-presentation {
-  height: 980px;
-  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center; }
-  .general-presentation__content {
-    width: 54.5%; }
+  align-items: center;
+  height: 70vh;
+  width: 640px;
+  margin: 0 auto; }
+
+.general-presentation__content {
+  margin: 0 auto;
+  text-align: center; }
+  .general-presentation__content__title {
+    font-family: "Open Sans Condensed"; }
+  .general-presentation__content__text {
+    font-family: "Pompiere";
+    font-size: 24px; }
+  .general-presentation__content__link {
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Arima Madurai";
+    color: #fff;
+    padding: 10px 50px;
+    background: #DAA520;
+    border-radius: 5px;
+    margin-bottom: 70px;
+    transition: all 0.2s; }
+    .general-presentation__content__link:hover {
+      background: #ab821a; }
 
 .services-presentation {
-  height: 980px;
+  background: url(../images/bg-univers.png);
+  height: 100vh;
   width: 100%;
-  background-size: 100%;
-  background-image: url("../images/bg-univers.png"); }
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .services-presentation__content {
+    display: flex;
+    justify-content: center; }
+    .services-presentation__content__fix {
+      align-items: center;
+      flex-direction: column;
+      display: flex; }
+    .services-presentation__content__title {
+      font-family: "Open Sans Condensed"; }
+    .services-presentation__content__services {
+      display: flex;
+      justify-content: center;
+      margin: 50px; }
+      .services-presentation__content__services__item {
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+        font-family: "Pompiere";
+        font-size: 2rem;
+        padding: 110px;
+        background: url(../images/bg-services-item.png) no-repeat;
+        background-size: 250px;
+        background-position: center;
+        transition: all 0.5s ease-in; }
+        .services-presentation__content__services__item:hover {
+          transform: scale(1.02);
+          color: #DAA520; }
+
+.article-container {
+  width: 960px;
+  margin: 0 auto; }
+
+.services-articles__article-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0; }
+  .services-articles__article-group img {
+    width: 400px;
+    height: 340px;
+    transition: all 1s; }
+    .services-articles__article-group img:hover {
+      transform: scale(1.02); }
+  .services-articles__article-group p {
+    width: 400px;
+    font-size: 24px;
+    margin-bottom: 55px; }
+  .services-articles__article-group h2 {
+    font-family: "Open Sans Condensed";
+    margin-top: 0; }
+  .services-articles__article-group__article__link {
+    font-family: "Arima Madurai";
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 50px;
+    border-radius: 30px;
+    background: #DAA520;
+    transition: 0.2s; }
+    .services-articles__article-group__article__link:hover {
+      background: #ab821a; }
+  .services-articles__article-group__separation-line {
+    height: 340px;
+    width: 3px;
+    border-radius: 3px;
+    background: #FFCCCC; }
+
+.text-align-right {
+  text-align: right; }
+
+.contact {
+  background: url(../images/bg-contact.png);
+  text-align: center; }
+  .contact__form {
+    margin: 30px; }
+    .contact__form__submit {
+      margin-bottom: 30px;
+      padding: 10px 60px;
+      border: none;
+      background: #DAA520;
+      border-radius: 20px;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.5s; }
+      .contact__form__submit:hover {
+        background: #ab821a; }
+  .contact h2 {
+    padding-top: 50px;
+    font-family: "Open Sans Condensed"; }
+  .contact p {
+    width: 300px;
+    font-size: 16px;
+    margin: auto; }
+  .contact textarea {
+    display: block;
+    margin: 20px auto;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif; }
+  .contact .contact__form__input {
+    padding: 10px 10px 10px 20px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 310px;
+    margin: 5px 5px; }
+  .contact__info {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    margin: 0 auto; }
+    .contact__info p {
+      width: auto;
+      margin: 2px;
+      text-align: left;
+      font-family: "Arima Madurai";
+      font-weight: 100;
+      opacity: 0.6; }
+    .contact__info h4 {
+      font-family: "Arima Madurai";
+      margin: 2px; }
+    .contact__info__phone::before {
+      content: url("../images/phone.png"); }
+    .contact__info__mail::before {
+      content: url("../images/email.png"); }
+    .contact__info__localisation::before {
+      content: url("../images/localisation.png"); }
+
+footer {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  footer p {
+    font-family: "Arima Madurai";
+    font-size: 16px;
+    text-align: center;
+    opacity: 0.5; }
 
 /*# sourceMappingURL=style.css.map */
