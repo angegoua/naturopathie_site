@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0; }
-  
+
   p {
     font-family: "Pompiere";
     font-size: 36px;
@@ -12,7 +12,7 @@ body {
         font-family: 'Open Sans Condensed', sans-serif;
     }
 
-    
+
     /*
 HEADER
 */
@@ -23,7 +23,7 @@ HEADER
     background-size: 100%; }
     .head-backgroundImage--index {
     background-image: url("../images/bg-who2.jpg");}
-  
+
   .head__navigation-menu {
     background-color: white;
     background-color: rgba(122, 116, 116, 0.466);
@@ -51,7 +51,7 @@ HEADER
         font-size: 24px;
         color: #fff;
         text-decoration: none; }
-  
+
   .head__titleDiv {
     width: 100%;
     height: 72%;
@@ -75,14 +75,14 @@ HEADER
       color: #FFCCCC;
       margin-top: -13px;
       font-weight: normal; }
-  
+
   .head__scroll-button {
     position: absolute;
     bottom: 75px;
     width: 100%;
     display: flex;
     justify-content: center; }
-  
+
   .head__socialNetDiv {
     position: fixed;
     display: flex;
@@ -117,7 +117,7 @@ HEADER
       background: #DAA520;
       height: 83px;
       width: 2px; }
-  
+
   .general-presentation {
     height: 980px;
     width: 100%;
@@ -126,18 +126,20 @@ HEADER
     align-items: center; }
     .general-presentation__content {
       width: 54.5%; }
-  
+
   .services-presentation {
     height: 980px;
     width: 100%;
     background-size: 100%;
     background-image: url("../images/bg-univers.png"); }
-  
+
     /*
     TEXT
     */
 
     .textDiv{
+        margin: 0 auto;
+        width: 80%;
         padding: 50px;
         height: 1700px;
         text-align: center;
@@ -151,4 +153,3 @@ HEADER
     .secondText{
 
     }
-    
