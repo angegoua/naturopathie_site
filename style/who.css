@@ -7,6 +7,11 @@ body {
     font-size: 36px;
     color: #000; }
 
+    h2{
+        font-size: 48px;
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+
     
     /*
 HEADER
@@ -17,7 +22,7 @@ HEADER
     position: relative;
     background-size: 100%; }
     .head-backgroundImage--index {
-      background-image: url("../images/bg-accueil.png"); }
+      background-image: url("../images/bg-who.jpg"); }
   
   .head__navigation-menu {
     background-color: white;
@@ -132,9 +137,8 @@ HEADER
     TEXT
     */
 
-    .mainText{
-        
-        margin: 0 auto;
+    .text{
         padding: 50px;
         text-align: center;
     }
+    
