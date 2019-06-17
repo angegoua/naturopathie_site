@@ -209,6 +209,9 @@ MAIN
 }
 
 .general-presentation{
+    display: flex;
+    align-items: center;
+    height: 70vh;
     width: 640px;
     margin: 0 auto;
 }
@@ -246,8 +249,11 @@ MAIN
 
 .services-presentation{
     background: url(../images/bg-univers.png);
-    height: 70vh;
-
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &__content{
         display: flex;
         justify-content: center;
@@ -281,7 +287,11 @@ MAIN
                 background: url(../images/bg-services-item.png) no-repeat ;
                 background-size: 250px;
                 background-position: center;
-            
+                transition: all 0.5s ease-in;
+                &:hover{
+                    transform:  scale(1.02);
+                    color: $orange-color;
+                }
             }
         }
     }
@@ -351,9 +361,25 @@ MAIN
     text-align: center;
     &__form{
         margin: 30px;
+
+        &__submit{margin-bottom: 30px;
+            padding: 10px 60px;
+            border: none;
+            background: $orange-color;
+            border-radius: 20px;
+            color: $white;
+            cursor: pointer;
+            transition: all 0.5s;
+            // text-align: right;
+            // display: block;
+            &:hover{
+                background: rgb(171, 130, 26);
+            }
+        }
     }
     
     h2{
+        padding-top: 50px;
         font-family: $title;
     }
 
@@ -371,16 +397,78 @@ MAIN
         outline: none;
         resize: none;
         padding: 20px;
-        font-family: $current-text;
+        font-family: Arial, Helvetica, sans-serif;
     }
-    input{
+    .contact__form__input{
+        padding: 10px 10px 10px 20px;
         border: none;
         border-radius: 50px;
         outline: none;
         resize: none;
-        padding: 10px;
-        font-family: $current;
-        width: 300px;
-        margin: 10px 25px;
+        // padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 310px;
+        margin: 5px 5px;
     }
+
+    &__info{
+        display: flex;
+        justify-content: space-between;
+        width: 700px;
+        margin: 0 auto;
+
+        p{
+            width: auto;
+            margin: 2px;
+            text-align: left;
+            font-family: $subtitle;
+            font-weight: 100;
+            opacity: 0.6;
+        }
+
+        h4{
+            font-family: $subtitle;
+            margin: 2px;
+            // text-align: left;
+        }
+
+        &__phone{
+            
+            &::before{
+                content: url('../images/phone.png');
+                
+            }
+        }
+        &__mail{
+          
+            &::before{
+                content: url('../images/email.png');
+                
+            }
+        }
+        &__localisation{
+               
+            &::before{
+                content: url('../images/localisation.png');
+                    
+            }
+        
+        }
+    }
+
+}
+
+
+footer {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p{
+        font-family: $subtitle;
+    font-size: 16px;
+    text-align: center;
+    opacity: 0.5;
+    }
+    
 }

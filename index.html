@@ -131,17 +131,32 @@
             </p>
             <div class="contact__form" >
                 <form action="traitement.php" method="POST">
-                    <input type="text" name="prenom" placeholder="Prénom">
-                    <input type="mail" name="email" placeholder="Adresse Mail">
+                    <input class="contact__form__input" type="text" name="prenom" placeholder="Prénom">
+                    <input class="contact__form__input" type="mail" name="email" placeholder="Adresse Mail">
                     <textarea name="message" id="message" cols="100" rows="10" placeholder="Exprimez-vous"></textarea>
+                    <input class="contact__form__submit" type="submit" value="Envoyer">
                 </form>
+            </div>
+            <div class="contact__info">
+                <div class="contact__info__phone">
+                    <h4>Téléphone</h4>
+                    <p>06.52.90.35.49</p>
+                </div>
+                <div class="contact__info__mail">
+                    <h4>E-mail</h4>
+                    <p>naturathome@gmail.com</p>
+                </div>
+                <div class="contact__info__localisation">
+                    <h4>Localisation</h4>
+                    <p>Mitry-La-Forêt</p>
+                </div>
             </div>
         </section>
     </main>
     <!-- Main end -->
     <!-- Footer start -->
     <footer>
-
+        <p>©Naturothome - Tous droits réservés</p>
     </footer>
     <!-- Footer end -->
 </body>

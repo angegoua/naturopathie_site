@@ -1,75 +1,316 @@
+body {
+  padding: 0;
+  margin: 0; }
+
+p {
+  font-family: "Pompiere";
+  font-size: 36px;
+  color: #000; }
+
 /*
-Error: Undefined variable: "$current".
-        on line 382 of C:\Users\angeg\OneDrive\Documents\GitHub\naturopathie_site\sass\style.scss
-
-377:         border: none;
-378:         border-radius: 50px;
-379:         outline: none;
-380:         resize: none;
-381:         padding: 10px;
-382:         font-family: $current;
-383:         width: 300px;
-384:         margin: 10px 25px;
-385:     }
-386: }
-
-Backtrace:
-C:\Users\angeg\OneDrive\Documents\GitHub\naturopathie_site\sass\style.scss:382
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+HEADER
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$current\".\A         on line 382 of C:\Users\angeg\OneDrive\Documents\GitHub\naturopathie_site\sass\style.scss\A \A 377:         border: none;\A 378:         border-radius: 50px;\A 379:         outline: none;\A 380:         resize: none;\A 381:         padding: 10px;\A 382:         font-family: $current;\A 383:         width: 300px;\A 384:         margin: 10px 25px;\A 385:     }\A 386: }"; }
+.head-backgroundImage {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-size: 100%; }
+  .head-backgroundImage--index {
+    background-image: url("../images/bg-accueil.png"); }
+
+.head__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.head__navigation-menu {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  height: 70px; }
+  .head__navigation-menu__logo {
+    background: #FFCCCC;
+    width: 50px;
+    height: 50px;
+    border-radius: 49.5%; }
+  .head__navigation-menu__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0; }
+    .head__navigation-menu__listItem {
+      list-style: none;
+      margin-left: 30px;
+      margin-right: 30px; }
+    .head__navigation-menu__listItem a {
+      font-family: "Pompiere";
+      font-weight: lighter;
+      font-size: 24px;
+      color: #fff;
+      text-decoration: none; }
+
+.head__titleDiv {
+  width: 100%;
+  height: 72%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Arima Madurai", Courier, monospace;
+  color: white; }
+  .head__titleDiv__title {
+    font-size: 100px;
+    margin-bottom: 0px;
+    margin-top: 100px;
+    font-weight: normal; }
+  .head__titleDiv__subTitle1 {
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: -18px;
+    opacity: 0.6; }
+  .head__titleDiv__subTitle2 {
+    font-size: 16px;
+    color: #FFCCCC;
+    margin-top: -13px;
+    font-weight: 100;
+    opacity: 0.6; }
+
+.head__scroll-button {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  animation: scroll-button ease-in; }
+  .head__scroll-button img {
+    width: 23.5px;
+    height: 13px; }
+
+@keyframes scroll-button {
+  from {
+    position: absolute;
+    transform: rotate(90deg); }
+  to {
+    position: absolute;
+    bottom: 50px; } }
+.head__socialNetDiv {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 40%;
+  right: 6%; }
+  .head__socialNetDiv__icon--facebook {
+    background-image: url("../images/facebook.png");
+    width: 32px;
+    height: 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  .head__socialNetDiv__icon--instagram {
+    background-image: url("../images/instagram.svg");
+    width: 32px;
+    height: 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  .head__socialNetDiv__icon--youtube {
+    background-image: url("../images/youtube.svg");
+    width: 32px;
+    height: 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  .head__socialNetDiv:before {
+    background: #DAA520;
+    height: 83px;
+    width: 2px; }
+
+/*
+MAIN
+*/
+.separation-dash {
+  height: 2px;
+  width: 60px;
+  background: lightgrey;
+  border-radius: 2px;
+  margin: 50px auto; }
+
+.general-presentation {
+  display: flex;
+  align-items: center;
+  height: 70vh;
+  width: 640px;
+  margin: 0 auto; }
+
+.general-presentation__content {
+  margin: 0 auto;
+  text-align: center; }
+  .general-presentation__content__title {
+    font-family: "Open Sans Condensed"; }
+  .general-presentation__content__text {
+    font-family: "Pompiere";
+    font-size: 24px; }
+  .general-presentation__content__link {
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Arima Madurai";
+    color: #fff;
+    padding: 10px 50px;
+    background: #DAA520;
+    border-radius: 5px;
+    margin-bottom: 70px;
+    transition: all 0.2s; }
+    .general-presentation__content__link:hover {
+      background: #ab821a; }
+
+.services-presentation {
+  background: url(../images/bg-univers.png);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .services-presentation__content {
+    display: flex;
+    justify-content: center; }
+    .services-presentation__content__fix {
+      align-items: center;
+      flex-direction: column;
+      display: flex; }
+    .services-presentation__content__title {
+      font-family: "Open Sans Condensed"; }
+    .services-presentation__content__services {
+      display: flex;
+      justify-content: center;
+      margin: 50px; }
+      .services-presentation__content__services__item {
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+        font-family: "Pompiere";
+        font-size: 2rem;
+        padding: 110px;
+        background: url(../images/bg-services-item.png) no-repeat;
+        background-size: 250px;
+        background-position: center;
+        transition: all 0.5s ease-in; }
+        .services-presentation__content__services__item:hover {
+          transform: scale(1.02);
+          color: #DAA520; }
+
+.article-container {
+  width: 960px;
+  margin: 0 auto; }
+
+.services-articles__article-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0; }
+  .services-articles__article-group img {
+    width: 400px;
+    height: 340px;
+    transition: all 1s; }
+    .services-articles__article-group img:hover {
+      transform: scale(1.02); }
+  .services-articles__article-group p {
+    width: 400px;
+    font-size: 24px;
+    margin-bottom: 55px; }
+  .services-articles__article-group h2 {
+    font-family: "Open Sans Condensed";
+    margin-top: 0; }
+  .services-articles__article-group__article__link {
+    font-family: "Arima Madurai";
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 50px;
+    border-radius: 30px;
+    background: #DAA520;
+    transition: 0.2s; }
+    .services-articles__article-group__article__link:hover {
+      background: #ab821a; }
+  .services-articles__article-group__separation-line {
+    height: 340px;
+    width: 3px;
+    border-radius: 3px;
+    background: #FFCCCC; }
+
+.text-align-right {
+  text-align: right; }
+
+.contact {
+  background: url(../images/bg-contact.png);
+  text-align: center; }
+  .contact__form {
+    margin: 30px; }
+    .contact__form__submit {
+      margin-bottom: 30px;
+      padding: 10px 60px;
+      border: none;
+      background: #DAA520;
+      border-radius: 20px;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.5s; }
+      .contact__form__submit:hover {
+        background: #ab821a; }
+  .contact h2 {
+    padding-top: 50px;
+    font-family: "Open Sans Condensed"; }
+  .contact p {
+    width: 300px;
+    font-size: 16px;
+    margin: auto; }
+  .contact textarea {
+    display: block;
+    margin: 20px auto;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif; }
+  .contact .contact__form__input {
+    padding: 10px 10px 10px 20px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 310px;
+    margin: 5px 5px; }
+  .contact__info {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    margin: 0 auto; }
+    .contact__info p {
+      width: auto;
+      margin: 2px;
+      text-align: left;
+      font-family: "Arima Madurai";
+      font-weight: 100;
+      opacity: 0.6; }
+    .contact__info h4 {
+      font-family: "Arima Madurai";
+      margin: 2px; }
+    .contact__info__phone::before {
+      content: url("../images/phone.png"); }
+    .contact__info__mail::before {
+      content: url("../images/email.png"); }
+    .contact__info__localisation::before {
+      content: url("../images/localisation.png"); }
+
+footer {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  footer p {
+    font-family: "Arima Madurai";
+    font-size: 16px;
+    text-align: center;
+    opacity: 0.5; }
+
+/*# sourceMappingURL=style.css.map */
