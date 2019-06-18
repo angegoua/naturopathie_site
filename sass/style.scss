@@ -36,6 +36,18 @@ HEADER
     }
 }
 
+.button-menu {
+    background-image: url(../images/button-menu.png);
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    background-repeat: no-repeat;
+    left: 64px;
+    top: 41px;
+    z-index: 10;
+    display: none;
+}
+
 .head__container{
     display: flex;
     justify-content: space-around;
@@ -479,6 +491,7 @@ footer {
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1132px */
 @media screen and (max-width: 1132px)
 {   
+
     .services-presentation__content__services {
         margin-top: 50px;
         margin-bottom: 0;
@@ -501,10 +514,34 @@ footer {
 
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
 @media screen and (max-width: 930px)
-{   
+{   .button-menu {
+        display: block;
+    }
+    .head__navigation-menu {
+        width: 250px;
+        height: 100%;
+        background-color: rgba(150, 150, 150, 0.5);
+
+
+        &__list {
+            flex-direction: column;
+
+            &Item {
+                margin-top: 11px;
+            }
+        }
+
+        &__logo {
+            display: none;
+        }
+    }
+
     .head__container{
-        justify-content: space-around;
-        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 44px;
     }
 
     .head__socialNetDiv {
