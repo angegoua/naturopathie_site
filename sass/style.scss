@@ -55,6 +55,10 @@ HEADER
 }
 
 //navaigation menu nav
+
+nav{
+    position: fixed;
+}
 .head__navigation-menu {
 
     
@@ -211,7 +215,9 @@ HEADER
 /*
 MAIN
 */
-
+.block-in-responsive{
+    display: none !important;
+}
 .separation-dash{
     height: 2px;
     width: 60px;
@@ -491,7 +497,13 @@ footer {
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1132px */
 @media screen and (max-width: 1132px)
 {   
+    .block-in-responsive{
+        display: block !important;
+    }
 
+    .none-in-responsive{
+        display: none !important;
+    }
     .services-presentation__content__services {
         margin-top: 50px;
         margin-bottom: 0;
@@ -514,9 +526,11 @@ footer {
 
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
 @media screen and (max-width: 930px)
-{   .button-menu {
+{   
+    .button-menu {
         display: block;
     }
+    
     .head__navigation-menu {
         width: 250px;
         height: 100%;
