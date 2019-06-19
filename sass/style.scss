@@ -42,11 +42,13 @@ HEADER
     width: 50px;
     position: absolute;
     background-repeat: no-repeat;
-    left: 64px;
-    top: 41px;
+    left: 114px;
+    top: 70px;
     z-index: 10;
-    display: none;
+    display: none;    
 }
+
+
 
 .head__container{
     display: flex;
@@ -535,13 +537,28 @@ footer {
         width: 250px;
         height: 100%;
         background-color: rgba(150, 150, 150, 0.5);
+        left: -252px;
+        position: absolute;
+        z-index: 0;
 
+        &--displayed {
+            left: 0px;
+            animation-duration: 1s;
+            animation-name: displayMenu;
+        }
+
+        &--hidden {
+            left: -252px;
+            animation-duration: 1s;
+            animation-name: hideMenu;
+        }
 
         &__list {
             flex-direction: column;
+            align-items: center;
 
             &Item {
-                margin-top: 11px;
+                margin-top: 28px;
             }
         }
 
@@ -556,6 +573,7 @@ footer {
         display: flex;
         justify-content: flex-start;
         padding-top: 44px;
+        
     }
 
     .head__socialNetDiv {
@@ -595,6 +613,26 @@ footer {
 
         &__info {
             width: 459px;
+        }
+    }
+
+    @keyframes displayMenu {
+        from {
+          left: -252px;
+        }
+      
+        to {
+            left: 0px;
+        }
+    }
+
+    @keyframes hideMenu {
+        from {
+            left: 0px;
+        }
+
+        to {
+            left: -252px;
         }
     }
 }
