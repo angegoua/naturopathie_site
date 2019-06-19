@@ -331,6 +331,12 @@ footer {
     text-align: center;
     opacity: 0.5; }
 
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1080px */
+@media screen and (max-width: 1920px) {
+  .head-backgroundImage--index {
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right; } }
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1132px */
 @media screen and (max-width: 1132px) {
   .block-in-responsive {
@@ -385,7 +391,7 @@ footer {
     display: flex;
     justify-content: flex-start;
     padding-top: 44px;
-    height: 839px; }
+    height: 930px; }
 
   .head__socialNetDiv {
     display: none; }
@@ -427,9 +433,9 @@ footer {
 @media screen and (max-width: 640px) {
   .head-backgroundImage {
     height: 487px;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
-    background-size: 258%; }
+    background-size: auto; }
 
   .head__navigation-menu {
     height: 443px; }

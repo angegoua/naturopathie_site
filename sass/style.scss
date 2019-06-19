@@ -495,7 +495,16 @@ footer {
 
 //RESPONSIVE GENERAL
 
-//HEADER
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1080px */
+@media screen and (max-width: 1920px)
+{
+    .head-backgroundImage--index {
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: right;
+    }
+}
+
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1132px */
 @media screen and (max-width: 1132px)
 {   
@@ -573,7 +582,7 @@ footer {
         display: flex;
         justify-content: flex-start;
         padding-top: 44px;
-        height: 839px;
+        height: 930px;
     }
 
     .head__socialNetDiv {
@@ -642,9 +651,9 @@ footer {
 {  
     .head-backgroundImage {
         height: 487px;
-        background-position: center;
+        background-position: right;
         background-repeat: no-repeat;
-        background-size: 258%;
+        background-size: auto;
     }
 
     .head__navigation-menu  {
