@@ -1,12 +1,21 @@
 const nav = document.querySelector('.head__navigation-menu')
+const navText = document.querySelectorAll('.head__navigation-menu a')
 const menuButton = document.querySelector('.button-menu')
 let menuDisplayed = false
 
 document.addEventListener('scroll', function(){
     // offset++
-    if( window.pageYOffset == 260 && window.pageYOffset <5000 ){
-        nav.style.opacity = 1
+    for(let i=0; i<navText.length; i++){
+        if( window.pageYOffset > 260 ){
+        nav.style.backgroundColor = 'rgba(255, 255, 255, 1)'
+        navText[i].style.color = 'black'
+        }
+        else{
+        nav.style.backgroundColor = 'rgba(255, 255, 255, 0.3)'
+        navText[i].style.color = 'white'
+        }
     }
+    
     console.log(window.pageYOffset)
 })
 
