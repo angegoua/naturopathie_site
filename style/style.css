@@ -18,6 +18,10 @@ HEADER
   background-size: 100%; }
   .head-backgroundImage--index {
     background-image: url("../images/bg-accueil.png"); }
+  .head-backgroundImage--who {
+    background-image: url("../images/bg-who2.jpg"); }
+  .head-backgroundImage--contact {
+    background-image: url("../images/bg-header-contact.jpg"); }
 
 .button-menu {
   background-image: url(../images/button-menu.png);
@@ -298,6 +302,8 @@ MAIN
     font-family: Arial, Helvetica, sans-serif;
     width: 310px;
     margin: 5px 5px; }
+  .contact__text {
+    font-size: 22px !important; }
   .contact__info {
     display: flex;
     justify-content: space-between;
@@ -333,7 +339,7 @@ footer {
 
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1080px */
 @media screen and (max-width: 1920px) {
-  .head-backgroundImage--index {
+  .head-backgroundImage {
     background-repeat: no-repeat;
     background-size: auto;
     background-position: right; } }
@@ -478,5 +484,11 @@ footer {
     width: 271px; }
   .contact__form textarea {
     width: 271px !important; } }
+.map {
+  height: 460px;
+  width: 100%; }
+
+.contact {
+  padding-bottom: 5px; }
 
 /*# sourceMappingURL=style.css.map */

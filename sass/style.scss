@@ -34,6 +34,14 @@ HEADER
     &--index{
         background-image: url('../images/bg-accueil.png');
     }
+
+    &--who {
+        background-image: url("../images/bg-who2.jpg");
+    }
+
+    &--contact {
+        background-image: url("../images/bg-header-contact.jpg");
+    }
 }
 
 .button-menu {
@@ -61,6 +69,7 @@ HEADER
 nav{
     position: fixed;
 }
+
 .head__navigation-menu {
 
     
@@ -398,6 +407,7 @@ MAIN
         }
     }
     
+    
     h2{
         padding-top: 50px;
         font-family: $title;
@@ -429,6 +439,10 @@ MAIN
         font-family: Arial, Helvetica, sans-serif;
         width: 310px;
         margin: 5px 5px;
+    }
+
+    &__text {
+        font-size: 22px !important;
     }
 
     &__info{
@@ -492,13 +506,14 @@ footer {
     }
     
 }
-
+//
 //RESPONSIVE GENERAL
+//
 
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1080px */
 @media screen and (max-width: 1920px)
 {
-    .head-backgroundImage--index {
+    .head-backgroundImage {
         background-repeat: no-repeat;
         background-size: auto;
         background-position: right;
