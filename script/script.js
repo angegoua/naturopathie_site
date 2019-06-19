@@ -10,18 +10,20 @@ document.addEventListener('scroll', function(){
     console.log(window.pageYOffset)
 })
 
-document.addEventListener('click', function() {
+menuButton.addEventListener('click', function() {
 
     if(menuDisplayed == false) {
 
+        nav.classList.remove('head__navigation-menu--hidden')
         nav.classList.add('head__navigation-menu--displayed')
+        
 
         menuDisplayed = true
 
     } else {
 
-        nav.classList.remove('head__navigation-menu--displayed') 
-
+        
+        nav.classList.remove('head__navigation-menu--displayed')
         nav.classList.add('head__navigation-menu--hidden') 
 
         menuDisplayed = false
