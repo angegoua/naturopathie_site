@@ -527,13 +527,7 @@ footer {
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1132px */
 @media screen and (max-width: 1132px)
 {   
-    .block-in-responsive{
-        display: block !important;
-    }
-
-    .none-in-responsive{
-        display: none !important;
-    }
+    
     .services-presentation__content__services {
         margin-top: 50px;
         margin-bottom: 0;
