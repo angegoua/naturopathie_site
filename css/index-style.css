@@ -18,6 +18,21 @@ HEADER
   background-size: 100%; }
   .head-backgroundImage--index {
     background-image: url("../images/bg-accueil.png"); }
+  .head-backgroundImage--who {
+    background-image: url("../images/bg-who2.jpg"); }
+  .head-backgroundImage--contact {
+    background-image: url("../images/bg-header-contact.jpg"); }
+
+.button-menu {
+  background-image: url(../images/button-menu.png);
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  background-repeat: no-repeat;
+  left: 114px;
+  top: 70px;
+  z-index: 10;
+  display: none; }
 
 .head__container {
   display: flex;
@@ -28,6 +43,9 @@ nav {
   position: fixed; }
 
 .head__navigation-menu {
+  z-index: 1000;
+  transition: all 0.5s ease-in;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.142);
   background-color: rgba(255, 255, 255, 0.3);
   width: 100%;
   height: 70px; }
@@ -45,6 +63,7 @@ nav {
       margin-left: 30px;
       margin-right: 30px; }
     .head__navigation-menu__listItem a {
+      transition: all 0.5s ease-in;
       font-family: "Pompiere";
       font-weight: lighter;
       font-size: 24px;
@@ -287,6 +306,8 @@ MAIN
     font-family: Arial, Helvetica, sans-serif;
     width: 310px;
     margin: 5px 5px; }
+  .contact__text {
+    font-size: 22px !important; }
   .contact__info {
     display: flex;
     justify-content: space-between;
@@ -320,6 +341,12 @@ footer {
     text-align: center;
     opacity: 0.5; }
 
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1080px */
+@media screen and (max-width: 1920px) {
+  .head-backgroundImage {
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right; } }
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1132px */
 @media screen and (max-width: 1132px) {
   .block-in-responsive {
@@ -340,17 +367,41 @@ footer {
 
   .article-container {
     width: 858px; } }
-/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 930px */
 @media screen and (max-width: 930px) {
-  .block-in-responsive {
-    display: block !important; }
+  .button-menu {
+    display: block; }
 
-  .none-in-responsive {
-    display: none !important; }
+  .head__navigation-menu {
+    width: 250px;
+    height: 100%;
+    background-color: rgba(150, 150, 150, 0.5);
+    left: -252px;
+    position: absolute;
+    z-index: 0; }
+    .head__navigation-menu--displayed {
+      left: 0px;
+      animation-duration: 1s;
+      animation-name: displayMenu; }
+    .head__navigation-menu--hidden {
+      left: -252px;
+      animation-duration: 1s;
+      animation-name: hideMenu; }
+    .head__navigation-menu__list {
+      flex-direction: column;
+      align-items: center; }
+      .head__navigation-menu__listItem {
+        margin-top: 28px; }
+    .head__navigation-menu__logo {
+      display: none; }
 
   .head__container {
-    justify-content: space-around;
-    align-items: center; }
+    flex-direction: column;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 44px;
+    height: 930px; }
 
   .head__socialNetDiv {
     display: none; }
@@ -376,6 +427,66 @@ footer {
   .contact textarea {
     width: 301px; }
   .contact__info {
-    width: 459px; } }
+    width: 459px; }
+
+  @keyframes displayMenu {
+    from {
+      left: -252px; }
+    to {
+      left: 0px; } }
+  @keyframes hideMenu {
+    from {
+      left: 0px; }
+    to {
+      left: -252px; } } }
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 640px */
+@media screen and (max-width: 640px) {
+  .head-backgroundImage {
+    height: 487px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: auto; }
+
+  .head__navigation-menu {
+    height: 443px; }
+
+  .head__titleDiv__title {
+    font-size: 50px; }
+
+  .head__scroll-button {
+    bottom: 512px; }
+
+  .button-menu {
+    left: 34px;
+    top: 34px; }
+
+  .general-presentation {
+    width: 310px;
+    margin: 14px auto; }
+
+  .services-presentation {
+    height: 109vh; }
+
+  .article-container {
+    width: 310px; }
+
+  .services-articles__article-group img {
+    width: 290px;
+    height: auto; }
+  .services-articles__article-group p {
+    width: 313px;
+    font-size: 21px; }
+  .services-articles__article-group__separation-line {
+    width: 240px; }
+
+  .contact__info {
+    width: 310px;
+    flex-direction: column; }
+    .contact__info p {
+      text-align: center; }
+  .contact__form__input {
+    width: 271px; }
+  .contact__form textarea {
+    width: 271px !important; } }
 
 /*# sourceMappingURL=index-style.css.map */
