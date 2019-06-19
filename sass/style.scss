@@ -526,7 +526,7 @@ footer {
 }
 
 
-/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 930px */
 @media screen and (max-width: 930px)
 {   
     .button-menu {
@@ -573,7 +573,7 @@ footer {
         display: flex;
         justify-content: flex-start;
         padding-top: 44px;
-        
+        height: 839px;
     }
 
     .head__socialNetDiv {
@@ -633,6 +633,98 @@ footer {
 
         to {
             left: -252px;
+        }
+    }
+}
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 640px */
+@media screen and (max-width: 640px)
+{  
+    .head-backgroundImage {
+        height: 487px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 258%;
+    }
+
+    .head__navigation-menu  {
+        height: 443px;
+    }
+
+    .head__titleDiv {        
+    
+        &__title {
+            font-size: 50px;
+            
+        }
+    }
+
+    .head__scroll-button {
+        bottom: 512px;
+    }
+
+    .button-menu {
+        left: 34px;
+        top: 34px;
+    }
+
+    .general-presentation {
+        width: 310px;
+        margin: 14px auto;
+    }
+
+    .services-presentation {
+        height: 109vh;
+
+        
+    }
+
+    .article-container {
+        width: 310px;
+    }
+
+    .services-articles {
+        &__article-group { 
+            img {
+                width: 290px;
+                height: auto;
+            }
+
+            p {
+                width: 313px;
+                font-size: 21px;
+            }
+
+            &__separation-line {
+                width: 240px;
+            }
+        }
+
+        
+    }
+
+    .contact {
+        &__info {
+            width: 310px;
+            flex-direction: column;
+
+            p {
+                text-align: center;
+            }
+            
+        }
+
+        &__form {
+
+            &__input {
+
+                width: 271px;
+
+            }
+
+            textarea {
+                width: 271px !important;
+            }
         }
     }
 }
