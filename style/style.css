@@ -22,6 +22,10 @@ HEADER
     background-image: url("../images/bg-who2.jpg"); }
   .head-backgroundImage--contact {
     background-image: url("../images/bg-header-contact.jpg"); }
+  .head-backgroundImage--ressources {
+    background-image: url("../images/bg-ressources.png");
+    background-size: 112%;
+    background-position: center; }
 
 .button-menu {
   background-image: url(../images/button-menu.png);
@@ -350,9 +354,16 @@ footer {
   .head-backgroundImage {
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: right; } }
+    background-position: right; }
+    .head-backgroundImage--ressources {
+      background-size: 112%;
+      background-position: center; } }
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1132px */
 @media screen and (max-width: 1132px) {
+  .head-backgroundImage--ressources {
+    background-position: center;
+    background-size: 222%; }
+
   .block-in-responsive {
     display: flex !important; }
 
@@ -502,5 +513,11 @@ footer {
     width: 271px; }
   .contact__form textarea {
     width: 271px !important; } }
+.map {
+  height: 460px;
+  width: 100%; }
+
+.contact {
+  padding-bottom: 5px; }
 
 /*# sourceMappingURL=style.css.map */

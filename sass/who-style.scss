@@ -1,7 +1,6 @@
 //Linking the style.scss
 @import 'style';
-
-
+//
 /*
 TEXT
 */
@@ -14,6 +13,7 @@ TEXT
     }
    
 .mainText {
+
     &__title{ 
       /* margin: 50px; */
       display: flex;
@@ -52,7 +52,12 @@ TEXT
 
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1040px */
 @media screen and (max-width: 1040px)
-{ 
+{   
+    .head-backgroundImage {
+        &--who {
+            background-position: left;
+        }
+    }
     .textDiv {
         width: 640px;
     }
