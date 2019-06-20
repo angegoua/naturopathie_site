@@ -15,13 +15,13 @@ h2{
 	position: relative;
 	background-size: 100%; }
 	.head-backgroundImage--index {
-	  background-image: url("../images/bg-nat.png"); }
-
+	  background-image: url("../images/bg-coaching.jpg"); }
+  
   .head__container {
 	display: flex;
 	justify-content: space-around;
 	align-items: center; }
-
+  
   .head__navigation-menu {
 	background-color: rgba(255, 255, 255, 0.3);
 	width: 100%;
@@ -49,7 +49,7 @@ h2{
 		font-size: 24px;
 		color: #fff;
 		text-decoration: none; }
-
+  
   .head__titleDiv {
 	width: 100%;
 	height: 72%;
@@ -75,7 +75,7 @@ h2{
 	  margin-top: -13px;
 	  font-weight: 100;
 	  opacity: 0.6; }
-
+  
   .head__scroll-button {
 	position: absolute;
 	bottom: 50px;
@@ -87,6 +87,13 @@ h2{
 	  width: 23.5px;
 	  height: 13px; }
   
+  @keyframes scroll-button {
+	from {
+	  position: absolute;
+	  transform: rotate(90deg); }
+	to {
+	  position: absolute;
+	  bottom: 50px; } }
   .head__socialNetDiv {
 	position: fixed;
 	display: flex;
@@ -125,7 +132,7 @@ h2{
 	  nav{
 		  position: fixed;
 	  }
-
+  
 /**/
 
 
@@ -306,10 +313,28 @@ h3{
 	font-weight: 400
 }
 
-p{
+p, li{
 	font-family: 'Pompiere';
 	font-size: 24px;
 	margin: 0;
+}
+
+.caption{
+	font-style: italic;
+	text-align: center;
+	margin: auto;
+	margin-top: 50px;
+}
+
+.questionSpace__askDiv__text a{
+	display: block;
+	text-align: center;
+	color: #DAA520;
+	text-decoration: none;
+}
+
+.questionSpace__askDiv__text a:hover{
+	text-decoration: underline;
 }
 
 footer {

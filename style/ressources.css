@@ -1,0 +1,254 @@
+
+body {
+  padding: 0;
+  margin: 0; }
+
+p {
+  font-family: "Pompiere";
+  font-size: 36px;
+  color: #000; }
+
+  /*
+  HEADER
+  */
+  .head-backgroundImage {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-size: 100%; }
+    .head-backgroundImage--index {
+      background-image: url("../images/bg-accueil.png"); }
+    .head-backgroundImage--who {
+      background-image: url("../images/bg-who2.jpg"); }
+    .head-backgroundImage--contact {
+      background-image: url("../images/bg-header-contact.jpg"); }
+    .head-backgroundImage--ressources {
+        background-image: url("../images/bg-ressources.png"); }
+
+  .button-menu {
+    background-image: url(../images/button-menu.png);
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    background-repeat: no-repeat;
+    left: 114px;
+    top: 70px;
+    z-index: 10;
+    display: none; }
+
+  .head__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+
+  nav {
+    position: fixed; }
+
+  .head__navigation-menu {
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    height: 70px; }
+    .head__navigation-menu__logo {
+      background: #FFCCCC;
+      width: 50px;
+      height: 50px;
+      border-radius: 49.5%; }
+    .head__navigation-menu__list {
+      display: flex;
+      justify-content: space-between;
+      padding: 0; }
+      .head__navigation-menu__listItem {
+        list-style: none;
+        margin-left: 30px;
+        margin-right: 30px; }
+      .head__navigation-menu__listItem a {
+        font-family: "Pompiere";
+        font-weight: lighter;
+        font-size: 24px;
+        color: #fff;
+        text-decoration: none; }
+
+  .head__titleDiv {
+    width: 100%;
+    height: 72%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Arima Madurai", Courier, monospace;
+    color: white; }
+    .head__titleDiv__title {
+      font-size: 100px;
+      margin-bottom: 0px;
+      margin-top: 100px;
+      font-weight: normal; }
+    .head__titleDiv__subTitle1 {
+      font-size: 16px;
+      font-weight: 100;
+      margin-top: -18px;
+      opacity: 0.6; }
+    .head__titleDiv__subTitle2 {
+      font-size: 16px;
+      color: #FFCCCC;
+      margin-top: -13px;
+      font-weight: 100;
+      opacity: 0.6; }
+
+  .head__scroll-button {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    animation: scroll-button ease-in; }
+    .head__scroll-button img {
+      width: 23.5px;
+      height: 13px; }
+
+  @keyframes scroll-button {
+    from {
+      position: absolute;
+      transform: rotate(90deg); }
+    to {
+      position: absolute;
+      bottom: 50px; } }
+  .head__socialNetDiv {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 40%;
+    right: 6%; }
+    .head__socialNetDiv__icon--facebook {
+      background-image: url("../images/facebook.png");
+      width: 32px;
+      height: 32px;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-top: 15px;
+      margin-bottom: 15px; }
+    .head__socialNetDiv__icon--instagram {
+      background-image: url("../images/instagram.svg");
+      width: 32px;
+      height: 32px;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-top: 15px;
+      margin-bottom: 15px; }
+    .head__socialNetDiv__icon--youtube {
+      background-image: url("../images/youtube.svg");
+      width: 32px;
+      height: 32px;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-top: 15px;
+      margin-bottom: 15px; }
+    .head__socialNetDiv:before {
+      background: #DAA520;
+      height: 83px;
+      width: 2px; }
+
+/*
+MAIN
+*/
+
+.youtube__videos {
+  padding-bottom: 100px;
+  display : flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  height: 980px;
+  width: 100%; }
+  .youtube__videos__title{
+    text-align: center;
+    width: 100%;
+    font-family: "Arima Madurai", Courier, monospace;
+    font-size: 36px;
+    color: #000; }
+  .youtube__videos__content {
+    width: 47%; }
+  .youtube__videos__explain {
+    width: 80%;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+.articles__presentation {
+  display : flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  height: 980px;
+  width: 100%;
+  background-size: 100%;
+  background-image: url("../images/bg-articles.png"); }
+  .articles__title{
+    height : 60px;
+    text-align: center;
+    width: 100%;
+    font-family: "Arima Madurai", Courier, monospace;
+    font-size: 36px;
+    color: #000; }
+  .articles__content {
+    width : 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .articles__content__image {
+      height: 350px;
+      width: 450px;
+      overflow: hidden;
+      margin-top: 40px;
+      position: relative;}
+    .articles__content__image:hover .article__text {
+      display: block;
+    }
+  .article__text {
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 400px;
+    height: 300px;
+    display: none;
+    position: absolute;
+    left : 25px;
+    top: 25px;
+  }
+    .article__text h2 {
+      text-align: center;
+      font-family: "Arima Madurai", Courier, monospace;
+    }
+    .article__text p {
+      margin: 10px;
+      font-size: 22px;
+      text-align: center;
+    }
+      .article__link {
+        position: absolute;
+        top : 250px;
+        left: 120px;
+        margin: 0 auto;
+        width : 160px;
+        height : 30px;
+        text-align: center;
+        background-color: #DAA520;
+        border-radius: 30px;
+      }
+      .article__link a{
+        text-decoration: none;
+        font-size: 20px;
+        font-family: "Arima Madurai", Courier, monospace;
+        color: #FFF;
+        cursor: pointer;
+      }
+
+      footer {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        footer p {
+          font-family: "Arima Madurai";
+          font-size: 16px;
+          text-align: center;
+          opacity: 0.5; }
