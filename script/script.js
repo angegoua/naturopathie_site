@@ -16,7 +16,7 @@ document.addEventListener('scroll', function(){
         }
     }
     
-    console.log(window.pageYOffset)
+    
 })
 
 menuButton.addEventListener('click', function() {

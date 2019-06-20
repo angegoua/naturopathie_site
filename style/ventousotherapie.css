@@ -15,7 +15,7 @@ h2{
 	position: relative;
 	background-size: 100%; }
 	.head-backgroundImage--index {
-	  background-image: url("../images/bg-nat.png"); }
+	  background-image: url("../images/ventouso.jpg"); }
   
   .head__container {
 	display: flex;
@@ -87,6 +87,13 @@ h2{
 	  width: 23.5px;
 	  height: 13px; }
   
+  @keyframes scroll-button {
+	from {
+	  position: absolute;
+	  transform: rotate(90deg); }
+	to {
+	  position: absolute;
+	  bottom: 50px; } }
   .head__socialNetDiv {
 	position: fixed;
 	display: flex;
