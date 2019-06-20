@@ -48,10 +48,10 @@ HEADER
     background-image: url(../images/button-menu.png);
     height: 50px;
     width: 50px;
-    position: absolute;
+    position: fixed;
     background-repeat: no-repeat;
-    left: 114px;
-    top: 70px;
+    // left: 114px;
+    // top: 70px;
     z-index: 10;
     display: none;    
 }
@@ -585,16 +585,18 @@ footer {
         height: 100%;
         background-color: rgba(150, 150, 150, 0.5);
         left: -252px;
-        position: absolute;
+        position: fixed;
         z-index: 0;
 
         &--displayed {
             left: 0px;
             animation-duration: 1s;
             animation-name: displayMenu;
+            
         }
 
         &--hidden {
+            
             left: -252px;
             animation-duration: 1s;
             animation-name: hideMenu;
