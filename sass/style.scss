@@ -517,6 +517,14 @@ footer {
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1080px */
 @media screen and (max-width: 1920px)
 {
+    .block-in-responsive{
+        display: flex !important;
+    }
+
+    .none-in-responsive{
+        display: none;
+    }
+
     .head-backgroundImage {
         background-repeat: no-repeat;
         background-size: auto;
@@ -527,6 +535,13 @@ footer {
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1132px */
 @media screen and (max-width: 1132px)
 {   
+    .block-in-responsive{
+        display: flex !important;
+    }
+
+    // .none-in-responsive{
+    //     display: none;
+    // }
     
     .services-presentation__content__services {
         margin-top: 50px;
@@ -551,6 +566,16 @@ footer {
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 930px */
 @media screen and (max-width: 930px)
 {   
+
+    .block-in-responsive{
+        display: flex !important;
+    }
+
+    .none-in-responsive{
+        display: none;
+    }
+
+
     .button-menu {
         display: block;
     }
@@ -599,7 +624,7 @@ footer {
     }
 
     .head__socialNetDiv {
-        display: none;
+        display: flex;
     }
 
     
@@ -661,7 +686,15 @@ footer {
 
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 640px */
 @media screen and (max-width: 640px)
-{  
+{   
+    .block-in-responsive{
+        display: flex !important;
+    }
+
+    .none-in-responsive{
+        display: none;
+    }
+
     .head-backgroundImage {
         height: 487px;
         background-position: right;
@@ -682,6 +715,7 @@ footer {
     }
 
     .head__scroll-button {
+        display: none;
         bottom: 512px;
     }
 
