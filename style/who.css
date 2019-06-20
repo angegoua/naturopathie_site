@@ -494,109 +494,60 @@ footer {
   .contact__form textarea {
     width: 271px !important; } }
 /*
-MAIN
+TEXT
 */
-.youtube__videos {
-  padding-bottom: 100px;
+.textDiv {
+  width: 960px;
+  margin: 0 auto; }
+
+.mainText__title {
+  /* margin: 50px; */
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  height: 980px;
-  width: 100%; }
-  .youtube__videos__title {
-    text-align: center;
-    width: 100%;
-    font-family: "Arima Madurai", Courier, monospace;
-    font-size: 36px;
-    color: #000; }
-  .youtube__videos__content {
-    width: 100%;
-    display: flex;
-    justify-content: center; }
-  .youtube__videos__explain {
-    width: 80%;
-    margin-top: 20px; }
-    .youtube__videos__explain p {
-      font-size: 23px; }
-
-.articles-ressources__presentation {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  height: 980px;
-  width: 100%;
-  background-size: 100%;
-  background-image: url("../images/bg-articles.png"); }
-
-.articles-ressources__title {
-  height: 60px;
-  text-align: center;
-  width: 100%;
-  font-family: "Arima Madurai", Courier, monospace;
-  font-size: 36px;
-  color: #000; }
-
-.articles-ressources__content {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; }
-
-.articles-ressources__content__image {
-  height: 350px;
-  width: 450px;
-  overflow: hidden;
-  margin-top: 40px;
-  position: relative; }
-
-.articles-ressources__content__image:hover .articles-ressources__text {
-  display: block; }
-
-.articles-ressources__text {
-  background-color: rgba(255, 255, 255, 0.75);
-  width: 400px;
-  height: 300px;
-  display: none;
-  position: absolute;
-  left: 25px;
-  top: 25px; }
-
-.articles-ressources__text h2 {
-  text-align: center;
-  font-family: "Arima Madurai", Courier, monospace; }
-
-.articles-ressources__text p {
-  margin: 10px;
-  font-size: 22px;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Open Sans Condensed', Courier, monospace;
+  font-size: 1.3em; }
+.mainText p {
+  font-size: 26px; }
+.mainText h2 {
+  font-family: 'Open Sans Condensed', Courier, monospace;
+  font-size: 2em;
   text-align: center; }
 
-.articles-ressources__link {
-  position: absolute;
-  top: 250px;
-  left: 120px;
-  margin: 0 auto;
-  width: 160px;
-  height: 30px;
-  text-align: center;
-  background-color: #DAA520;
-  border-radius: 30px; }
+.textDiv__profile {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 10px auto;
+  margin-top: 50px;
+  text-align: center; }
 
-.articles-ressources__link a {
-  text-decoration: none;
-  font-size: 20px;
-  font-family: "Arima Madurai", Courier, monospace;
-  color: #FFF;
-  cursor: pointer; }
+.textDiv__profile img {
+  width: 134%; }
 
-/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1440px */
-@media screen and (max-width: 1440px) {
-  .articles-ressources__title {
-    margin-bottom: 37px; }
-  .articles-ressources__content {
-    justify-content: space-around; }
-  .articles-ressources__presentation {
-    height: 100%; } }
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1040px */
+@media screen and (max-width: 1040px) {
+  .head-backgroundImage--who {
+    background-position: left; }
 
-/*# sourceMappingURL=ressources.css.map */
+  .textDiv {
+    width: 640px; } }
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 685px */
+@media screen and (max-width: 685px) {
+  .textDiv {
+    width: 420px; }
+
+  .mainText__title {
+    font-size: 1.2em; }
+  .mainText p {
+    font-size: 22px; } }
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 460px */
+@media screen and (max-width: 460px) {
+  .textDiv {
+    width: 330px; }
+
+  .mainText p {
+    font-size: 22px; } }
+
+/*# sourceMappingURL=who.css.map */

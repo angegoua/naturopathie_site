@@ -42,6 +42,12 @@ HEADER
     &--contact {
         background-image: url("../images/bg-header-contact.jpg");
     }
+
+    &--ressources {
+        background-image: url("../images/bg-ressources.png");
+        background-size: 112%;
+        background-position: center;
+    }
 }
 
 .button-menu {
@@ -521,12 +527,25 @@ footer {
         background-repeat: no-repeat;
         background-size: auto;
         background-position: right;
+
+        &--ressources {
+            background-size: 112%;
+            background-position: center;
+        }
     }
 }
 
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1132px */
 @media screen and (max-width: 1132px)
 {   
+    .head-backgroundImage {
+        
+        &--ressources {
+            background-position: center;
+            background-size: 222%;
+        }
+    }
+
     
     .services-presentation__content__services {
         margin-top: 50px;

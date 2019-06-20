@@ -22,6 +22,10 @@ HEADER
     background-image: url("../images/bg-who2.jpg"); }
   .head-backgroundImage--contact {
     background-image: url("../images/bg-header-contact.jpg"); }
+  .head-backgroundImage--ressources {
+    background-image: url("../images/bg-ressources.png");
+    background-size: 112%;
+    background-position: center; }
 
 .button-menu {
   background-image: url(../images/button-menu.png);
@@ -346,9 +350,16 @@ footer {
   .head-backgroundImage {
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: right; } }
+    background-position: right; }
+    .head-backgroundImage--ressources {
+      background-size: 112%;
+      background-position: center; } }
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1132px */
 @media screen and (max-width: 1132px) {
+  .head-backgroundImage--ressources {
+    background-position: center;
+    background-size: 222%; }
+
   .services-presentation__content__services {
     margin-top: 50px;
     margin-bottom: 0;
@@ -482,58 +493,11 @@ footer {
     width: 271px; }
   .contact__form textarea {
     width: 271px !important; } }
-/*
-TEXT
-*/
-.textDiv {
-  width: 960px;
-  margin: 0 auto; }
+.map {
+  height: 460px;
+  width: 100%; }
 
-.mainText__title {
-  /* margin: 50px; */
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-family: 'Open Sans Condensed', Courier, monospace;
-  font-size: 1.3em; }
-.mainText p {
-  font-size: 26px; }
-.mainText h2 {
-  font-family: 'Open Sans Condensed', Courier, monospace;
-  font-size: 2em;
-  text-align: center; }
-
-.textDiv__profile {
-  width: 150px;
-  height: 150px;
-  overflow: hidden;
-  border-radius: 50%;
-  margin: 10px auto;
-  margin-top: 50px;
-  text-align: center; }
-
-.textDiv__profile img {
-  width: 134%; }
-
-/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1040px */
-@media screen and (max-width: 1040px) {
-  .textDiv {
-    width: 640px; } }
-/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 685px */
-@media screen and (max-width: 685px) {
-  .textDiv {
-    width: 420px; }
-
-  .mainText__title {
-    font-size: 1.2em; }
-  .mainText p {
-    font-size: 22px; } }
-/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 460px */
-@media screen and (max-width: 460px) {
-  .textDiv {
-    width: 330px; }
-
-  .mainText p {
-    font-size: 22px; } }
+.contact {
+  padding-bottom: 5px; }
 
 /*# sourceMappingURL=style.css.map */
