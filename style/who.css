@@ -424,7 +424,7 @@ footer {
     height: 930px; }
 
   .head__socialNetDiv {
-    display: flex; }
+    display: none; }
 
   .general-presentation {
     width: 556px; }
