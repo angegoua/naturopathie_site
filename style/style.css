@@ -482,5 +482,58 @@ footer {
     width: 271px; }
   .contact__form textarea {
     width: 271px !important; } }
+/*
+TEXT
+*/
+.textDiv {
+  width: 960px;
+  margin: 0 auto; }
+
+.mainText__title {
+  /* margin: 50px; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Open Sans Condensed', Courier, monospace;
+  font-size: 1.3em; }
+.mainText p {
+  font-size: 26px; }
+.mainText h2 {
+  font-family: 'Open Sans Condensed', Courier, monospace;
+  font-size: 2em;
+  text-align: center; }
+
+.textDiv__profile {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 10px auto;
+  margin-top: 50px;
+  text-align: center; }
+
+.textDiv__profile img {
+  width: 134%; }
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1040px */
+@media screen and (max-width: 1040px) {
+  .textDiv {
+    width: 640px; } }
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 685px */
+@media screen and (max-width: 685px) {
+  .textDiv {
+    width: 420px; }
+
+  .mainText__title {
+    font-size: 1.2em; }
+  .mainText p {
+    font-size: 22px; } }
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 460px */
+@media screen and (max-width: 460px) {
+  .textDiv {
+    width: 330px; }
+
+  .mainText p {
+    font-size: 22px; } }
 
 /*# sourceMappingURL=style.css.map */
