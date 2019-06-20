@@ -347,6 +347,12 @@ footer {
 
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1080px */
 @media screen and (max-width: 1920px) {
+  .block-in-responsive {
+    display: flex !important; }
+
+  .none-in-responsive {
+    display: none; }
+
   .head-backgroundImage {
     background-repeat: no-repeat;
     background-size: auto;
@@ -359,6 +365,9 @@ footer {
   .head-backgroundImage--ressources {
     background-position: center;
     background-size: 222%; }
+
+  .block-in-responsive {
+    display: flex !important; }
 
   .services-presentation__content__services {
     margin-top: 50px;
@@ -374,6 +383,12 @@ footer {
     width: 858px; } }
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 930px */
 @media screen and (max-width: 930px) {
+  .block-in-responsive {
+    display: flex !important; }
+
+  .none-in-responsive {
+    display: none; }
+
   .button-menu {
     display: block; }
 
@@ -409,7 +424,7 @@ footer {
     height: 930px; }
 
   .head__socialNetDiv {
-    display: none; }
+    display: flex; }
 
   .general-presentation {
     width: 556px; }
@@ -446,6 +461,12 @@ footer {
       left: -252px; } } }
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 640px */
 @media screen and (max-width: 640px) {
+  .block-in-responsive {
+    display: flex !important; }
+
+  .none-in-responsive {
+    display: none; }
+
   .head-backgroundImage {
     height: 487px;
     background-position: right;
@@ -459,6 +480,7 @@ footer {
     font-size: 50px; }
 
   .head__scroll-button {
+    display: none;
     bottom: 512px; }
 
   .button-menu {
