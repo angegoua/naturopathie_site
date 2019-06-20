@@ -146,10 +146,11 @@
             </p>
             <div class="contact__form" >
                 <form action="traitement.php" method="POST">
-                    <input class="contact__form__input" type="text" name="prenom" placeholder="Prénom">
+                    <input class="contact__form__input" type="text" name="name" placeholder="Prénom">
                     <input class="contact__form__input" type="mail" name="email" placeholder="Adresse Mail">
                     <textarea name="message" id="message" cols="100" rows="10" placeholder="Exprimez-vous"></textarea>
-                    <input class="contact__form__submit" type="submit" value="Envoyer">
+                    <!-- <div class="contact__form__notification contact__form__notification--success">Succès! L'email a été envoyé </div>-->
+                    <input class="contact__form__submit" type="submit" value="Envoyer" name="submit">
                 </form>
             </div>
             <div class="contact__info">

@@ -7,7 +7,7 @@ MAIN
   
 .youtube__videos {
     
-    padding-bottom: 100px;
+    padding-bottom: 10px;
     display : flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -32,7 +32,7 @@ MAIN
 
     &__explain {
       width: 80%;
-      margin-top: 20px;
+      padding-top: 54px;
       
 
       p {
@@ -140,6 +140,45 @@ MAIN
 
         &__presentation {
             height: 100%;
+        }
+    }
+}
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 960px */
+@media screen and (max-width: 500px)
+{
+    .youtube {
+
+        &__videos {
+            &__explain {
+                padding-top: 11px;
+            }
+        }
+    }
+
+    .articles-ressources {
+        &__content {
+            &__image {
+                height: 415px;
+                width: 300px;
+            }
+        }
+
+        &__text {
+            width: 249px;
+            height: 399px;
+            left: 25px;
+            top: 10px;
+
+            p {
+                margin-top: -25px;
+            }
+        }
+
+        &__link {
+            bottom: 11px;
+            left: 44px;
+            top: unset;
         }
     }
 }

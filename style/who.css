@@ -26,15 +26,16 @@ HEADER
     background-image: url("../images/bg-ressources.png");
     background-size: 112%;
     background-position: center; }
+  .head-backgroundImage--coaching {
+    background-image: url("../images/bg-coaching.jpg");
+    background-position: center; }
 
 .button-menu {
   background-image: url(../images/button-menu.png);
   height: 50px;
   width: 50px;
-  position: absolute;
+  position: fixed;
   background-repeat: no-repeat;
-  left: 114px;
-  top: 70px;
   z-index: 10;
   display: none; }
 
@@ -285,6 +286,17 @@ MAIN
       transition: all 0.5s; }
       .contact__form__submit:hover {
         background: #ab821a; }
+    .contact__form__notification {
+      width: 300px;
+      border-radius: 20px;
+      color: #fff;
+      padding: 5px 0px;
+      margin: 0 auto;
+      margin-bottom: 15px; }
+      .contact__form__notification--error {
+        background-color: #d45012; }
+      .contact__form__notification--success {
+        background-color: #379c48; }
   .contact h2 {
     padding-top: 50px;
     font-family: "Open Sans Condensed"; }
@@ -359,7 +371,10 @@ footer {
     background-position: right; }
     .head-backgroundImage--ressources {
       background-size: 112%;
-      background-position: center; } }
+      background-position: center; }
+    .head-backgroundImage--coaching {
+      background-position: center;
+      background-size: 215%; } }
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1132px */
 @media screen and (max-width: 1132px) {
   .head-backgroundImage--ressources {
@@ -397,7 +412,7 @@ footer {
     height: 100%;
     background-color: rgba(150, 150, 150, 0.5);
     left: -252px;
-    position: absolute;
+    position: fixed;
     z-index: 0; }
     .head__navigation-menu--displayed {
       left: 0px;
@@ -424,7 +439,7 @@ footer {
     height: 930px; }
 
   .head__socialNetDiv {
-    display: flex; }
+    display: none; }
 
   .general-presentation {
     width: 556px; }
@@ -472,6 +487,9 @@ footer {
     background-position: right;
     background-repeat: no-repeat;
     background-size: auto; }
+    .head-backgroundImage--coaching {
+      background-position: center;
+      background-size: 240%; }
 
   .head__navigation-menu {
     height: 443px; }

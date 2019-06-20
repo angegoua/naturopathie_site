@@ -48,6 +48,11 @@ HEADER
         background-size: 112%;
         background-position: center;
     }
+
+    &--coaching {
+        background-image: url("../images/bg-coaching.jpg");
+        background-position: center;
+    }
 }
 
 .button-menu {
@@ -415,6 +420,23 @@ MAIN
                 background: rgb(171, 130, 26);
             }
         }
+
+        &__notification {
+            width: 300px;
+            border-radius: 20px;
+            color: $white;
+            padding: 5px 0px;
+            margin: 0 auto;
+            margin-bottom: 15px;
+
+            &--error {
+                background-color: rgb(212, 80, 18);
+            }
+
+            &--success {
+                background-color: rgb(55, 156, 72);
+            }
+        }
     }
     
     
@@ -540,6 +562,11 @@ footer {
             background-size: 112%;
             background-position: center;
         }
+
+        &--coaching {
+            background-position: center;
+            background-size: 215%;
+        }
     }
 }
 
@@ -645,7 +672,7 @@ footer {
     }
 
     .head__socialNetDiv {
-        display: flex;
+        display: none;
     }
 
     
@@ -721,6 +748,11 @@ footer {
         background-position: right;
         background-repeat: no-repeat;
         background-size: auto;
+
+        &--coaching {
+            background-position: center;
+            background-size: 240%;
+        }
     }
 
     .head__navigation-menu  {
