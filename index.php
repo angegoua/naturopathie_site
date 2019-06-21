@@ -1,12 +1,48 @@
+<?php
+    if(isset($_POST['submitMessage'])) {
+
+        //checking if variables exist
+        if(isset($_POST['name']) AND isset($_POST['email']) AND isset($_POST['message'])) {
+
+            //checking if variables are not empty
+            if(!empty($_POST['name']) AND !empty($_POST['email']) AND !empty($_POST['message'])) {
+
+                //Checking if it's an email 
+                if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+
+                    //The message
+                    $message = $_POST['message'] . ' Mon email est: ' . $_POST['email'];
+
+                    //The subject
+                    $subject = $_POST['name'] . ' vous a envoyé un message.'; 
+
+                    // Envoi du mail
+                    mail('rider.constant@gmail.com', $subject, $message);
+
+                    $success = true;
+                    
+                } else {
+                    $error = 'Merci d\'entrer une adresse email valide.';
+                }
+            } else {
+                $error = 'Merci de compléter tous les champs...';
+            }
+        } else {
+            $error = 'Erreur !';
+        }
+    }
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Naturothome</title>
+    <title>Naturothome - Accueil</title>
+    <meta name="description" content="Naturothome, laisser la nature reprendre ses droits.">
     <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:400,700|Open+Sans+Condensed:300,700|Pompiere&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 </head>
 <body>
     <!-- Header start-->
@@ -22,13 +58,13 @@
                         <li class="head__navigation-menu__listItem"><a href="ventousotherapie.html" title="Ventousothérapie">Ventousothérapie</a></li>
                         <li class="head__navigation-menu__listItem"><a href="coaching.html" title="Coaching">Coaching</a></li>
                     </ul>
-                    <a href="index.html" title="Accueil" class="head__navigation-menu__logo">
+                    <a href="index.php" title="Accueil" class="head__navigation-menu__logo">
                         
                     </a>
                     <ul class="head__navigation-menu__list">
                         <li class="head__navigation-menu__listItem"><a href="who.html" title="Qui suis-je ?">Qui suis-je ?</a></li>
                         <li class="head__navigation-menu__listItem"><a href="ressources.html" title="Ressources">Ressources</a></li>
-                        <li class="head__navigation-menu__listItem"><a href="contact.html" title="Contact">Contact</a></li>
+                        <li class="head__navigation-menu__listItem"><a href="contact.php" title="Contact">Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -145,12 +181,18 @@
                 ci-dessous !
             </p>
             <div class="contact__form" >
-                <form action="traitement.php" method="POST">
+                <form action="" method="POST">
                     <input class="contact__form__input" type="text" name="name" placeholder="Prénom">
                     <input class="contact__form__input" type="mail" name="email" placeholder="Adresse Mail">
                     <textarea name="message" id="message" cols="100" rows="10" placeholder="Exprimez-vous"></textarea>
-                    <!-- <div class="contact__form__notification contact__form__notification--success">Succès! L'email a été envoyé </div>-->
-                    <input class="contact__form__submit" type="submit" value="Envoyer" name="submit">
+                    <?php
+                        if(isset($error)) {
+                            echo '<div class="contact__form__notification contact__form__notification--error">' . $error . '</div>';
+                        } elseif(isset($success)) {
+                            echo '<div class="contact__form__notification contact__form__notification--success">Le message a été envoyé.</div>';
+                        }
+                    ?>
+                    <input class="contact__form__submit" type="submit" value="Envoyer" name="submitMessage">
                 </form>
             </div>
             <div class="contact__info">

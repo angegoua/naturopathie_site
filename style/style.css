@@ -405,7 +405,9 @@ footer {
     display: none; }
 
   .button-menu {
-    display: block; }
+    display: block;
+    top: 50px;
+    left: 110px; }
 
   .head__navigation-menu {
     width: 250px;
@@ -533,5 +535,11 @@ footer {
     width: 271px; }
   .contact__form textarea {
     width: 271px !important; } }
+.map {
+  height: 460px;
+  width: 100%; }
+
+.contact {
+  padding-bottom: 5px; }
 
 /*# sourceMappingURL=style.css.map */
