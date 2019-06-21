@@ -1,7 +1,7 @@
 @import 'naturopathie-style';
 
 .head-backgroundImage--index {
-    background-image: url("../images/ventouso.jpg"); }
+    background-image: url("../images/ventouso.jpg") !important; }
 
 @media screen and (max-width: 930px){
     .head__titleDiv__title{
