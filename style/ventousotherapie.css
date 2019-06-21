@@ -521,6 +521,9 @@ footer p {
     width: 271px; }
   .contact__form textarea {
     width: 271px !important; } }
+.head-backgroundImage--index {
+  background-image: url("../images/ventouso.jpg"); }
+
 @media screen and (max-width: 930px) {
   .head__titleDiv__title {
     font-size: 50px; } }
