@@ -535,5 +535,11 @@ footer {
     width: 271px; }
   .contact__form textarea {
     width: 271px !important; } }
+.map {
+  height: 460px;
+  width: 100%; }
+
+.contact {
+  padding-bottom: 5px; }
 
 /*# sourceMappingURL=style.css.map */
