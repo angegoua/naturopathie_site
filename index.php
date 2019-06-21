@@ -38,7 +38,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Naturothome - Accueil</title>
+    <title>Naturathome - Accueil</title>
     <meta name="description" content="Naturothome, laisser la nature reprendre ses droits.">
     <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:400,700|Open+Sans+Condensed:300,700|Pompiere&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
